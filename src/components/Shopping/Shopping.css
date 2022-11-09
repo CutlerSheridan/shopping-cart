@@ -1,0 +1,6 @@
+.shopping-container {
+  /* Must have bottom padding or ProductPage has no bottom margin */
+  padding: 1rem;
+  background: purple;
+  color: white;
+}

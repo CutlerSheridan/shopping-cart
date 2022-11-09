@@ -13,3 +13,8 @@ body {
   width: 100%;
   font-size: 2rem;
 }
+
+.app {
+  min-height: 20rem;
+  background: skyblue;
+}
