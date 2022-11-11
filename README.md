@@ -2,16 +2,24 @@
 
 ## Browse items, add or remove them to/from your cart
 
-Made to practice React, client-side routing, and TTD in React.
+Made to practice React, client-side routing, and TTD in React. Also experimenting combining context with reducers and wrapping it all in a provider.
 
 #### TODO NEXT
 
-- implement context for cart and for catalogue
+- write decremented
+- test decremented
+- write typed_value
+- test typed_value
 
 #### TODO LATER
 
 ##### Features
 
+- write removed_all
+- test removed_all
+- write cleared_cart
+- test cleared_cart
+- wire up context provider
 - add product pages
 - add cart page
 
@@ -22,6 +30,13 @@ Made to practice React, client-side routing, and TTD in React.
 - add credit
 
 #### DONE
+
+_0.2.0_
+
+- create CartContext for context and reducer
+- start writing cartReducer
+- test Item
+- test incremented
 
 _0.1.0_
 
