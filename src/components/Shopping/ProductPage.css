@@ -1,10 +1,9 @@
 .productPage-container {
-  display: flex;
   padding: 1rem;
   width: 25rem;
-  height: 7rem;
   background: red;
 }
 .productPage-dismiss {
   margin: 0 1rem;
+  color: black;
 }

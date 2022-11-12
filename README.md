@@ -6,8 +6,6 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- write decremented
-- test decremented
 - write typed_value
 - test typed_value
 
@@ -19,7 +17,7 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - test removed_all
 - write cleared_cart
 - test cleared_cart
-- wire up context provider
+- ? combine some reducer actions
 - add product pages
 - add cart page
 
@@ -30,6 +28,12 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - add credit
 
 #### DONE
+
+_0.2.1_
+
+- write decremented
+- test decremented
+- wire up context provider
 
 _0.2.0_
 

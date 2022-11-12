@@ -1,9 +1,18 @@
 import { createContext, useContext, useReducer } from 'react';
 
 const CartContext = createContext(null);
+const CartDispatchContext = createContext(null);
 
-const CartProvider = ({ children }) => {
-  // logic
+export const CartProvider = ({ children }) => {
+  const [cart, dispatch] = useReducer(cartReducer, initialCart);
+
+  return (
+    <CartContext.Provider value={cart}>
+      <CartDispatchContext.Provider value={dispatch}>
+        {children}
+      </CartDispatchContext.Provider>
+    </CartContext.Provider>
+  );
 };
 
 export const cartReducer = (cart, action) => {
@@ -25,9 +34,27 @@ export const cartReducer = (cart, action) => {
       }
       return newCart;
     }
+    case 'decremented': {
+      const newCart = [...cart]
+        .map((x) => {
+          if (x.id === action.id) {
+            return { ...x, quantity: --x.quantity };
+          }
+          return x;
+        })
+        .filter((x) => x.quantity > 0);
+      return newCart;
+    }
     default:
       throw Error('unknown action: ' + action.type);
   }
+};
+
+export const useCart = () => {
+  return useContext(CartContext);
+};
+export const useCartDispatch = () => {
+  return useContext(CartDispatchContext);
 };
 
 export const Item = (
@@ -45,3 +72,4 @@ export const catalogue = [
   Item(itemCount++, 'squash', 7.5),
   Item(itemCount++, 'zucchini', 0.99),
 ];
+const initialCart = [];
