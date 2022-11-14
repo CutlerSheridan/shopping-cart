@@ -19,12 +19,12 @@ export const cartReducer = (cart, action) => {
   switch (action.type) {
     case 'incremented': {
       let exists = false;
-      const newCart = [...cart];
-      newCart.map((x) => {
+      const newCart = [...cart].map((x) => {
         if (x.id === action.id) {
           exists = true;
-          return { ...x, quantity: ++x.quantity };
+          return { ...x, quantity: x.quantity + 1 };
         }
+        return x;
       });
       if (!exists) {
         newCart.push({
@@ -38,7 +38,7 @@ export const cartReducer = (cart, action) => {
       const newCart = [...cart]
         .map((x) => {
           if (x.id === action.id) {
-            return { ...x, quantity: --x.quantity };
+            return { ...x, quantity: x.quantity - 1 };
           }
           return x;
         })

@@ -29,6 +29,10 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### DONE
 
+_0.2.2_
+
+- fix incremented and decremented
+
 _0.2.1_
 
 - write decremented

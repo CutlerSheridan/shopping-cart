@@ -14,7 +14,7 @@ describe('cartReducer - incremented', () => {
   it('adds 1 of item already in cart', () => {
     const action = {
       type: 'incremented',
-      id: 1,
+      id: 0,
     };
     const testCart = [
       { ...catalogue.find((x) => x.id === action.id), quantity: 2 },
@@ -33,6 +33,19 @@ describe('cartReducer - incremented', () => {
 
     expect(cartReducer(testCart, action)).toEqual([
       { ...catalogue.find((x) => x.id === action.id), quantity: 1 },
+    ]);
+  });
+  it('adds 2 of item to empty cart', () => {
+    const testCart = [];
+    const action = {
+      type: 'incremented',
+      id: 1,
+    };
+
+    let newCart = cartReducer(testCart, action);
+    newCart = cartReducer(newCart, action);
+    expect(newCart).toEqual([
+      { ...catalogue.find((x) => x.id === action.id), quantity: 2 },
     ]);
   });
   it('adds 1 of new item to non-empty cart', () => {

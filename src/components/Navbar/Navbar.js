@@ -13,7 +13,7 @@ const Navbar = (props) => {
           Shopping
         </Link>
         <Link className="nav-link" to="cart">
-          Cart: {useCart().reduce((prev, x) => ++prev, 0)}
+          Cart: {useCart().reduce((prev, x) => prev + x.quantity, 0)}
         </Link>
       </nav>
     </header>
