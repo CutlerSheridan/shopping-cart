@@ -2,6 +2,7 @@ import './Shopping.css';
 import ProductCard from './ProductCard';
 import { Outlet } from 'react-router-dom';
 import { useCart } from '../../CartContext';
+import CartPreview from '../Cart/CartPreview';
 
 const Shopping = () => {
   const cart = useCart();
@@ -10,19 +11,9 @@ const Shopping = () => {
       <h1>This is Shopping</h1>
       <ProductCard productId="0" />
       <ProductCard productId="1" />
+      <ProductCard productId="2" />
       <Outlet />
-
-      <div className="cart">
-        <h2>CART</h2>
-        {cart.map((x, index) => (
-          <div key={index}>
-            <div>{x.name}</div>
-            <div>
-              ${x.price} x {x.quantity} = ${x.price * x.quantity}
-            </div>
-          </div>
-        ))}
-      </div>
+      <CartPreview />
     </div>
   );
 };

@@ -29,6 +29,7 @@ const ProductCard = (props) => {
               type: 'typed_value',
               id: productId,
               value: +e.target.value,
+              step: 1,
             });
           }}
           value={(() => {

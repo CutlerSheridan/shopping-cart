@@ -52,7 +52,7 @@ export const cartReducer = (cart, action) => {
         .map((x) => {
           if (x.id === action.id) {
             exists = true;
-            return { ...x, quantity: value };
+            return { ...x, quantity: Math.round(value) };
           }
           return x;
         })
@@ -60,10 +60,20 @@ export const cartReducer = (cart, action) => {
       if (!exists && value > 0) {
         newCart.push({
           ...catalogue.find((x) => x.id === action.id),
-          quantity: value,
+          quantity: Math.round(value),
         });
       }
       return newCart;
+    }
+    case 'deleted_item': {
+      return cartReducer(cart, {
+        type: 'typed_value',
+        id: action.id,
+        value: 0,
+      });
+    }
+    case 'cleared_cart': {
+      return [];
     }
     default:
       throw Error('unknown action: ' + action.type);

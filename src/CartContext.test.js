@@ -153,3 +153,34 @@ describe('cartReducer - typed_value', () => {
     expect(cartReducer(testCart, action)).toEqual([]);
   });
 });
+
+describe('cartReducer - deleted_item', () => {
+  it('fully removes item from cart', () => {
+    const action = {
+      type: 'deleted_item',
+      id: 1,
+    };
+    const testCart = [
+      { ...catalogue[0], quantity: 3 },
+      { ...catalogue[1], quantity: 4 },
+    ];
+
+    expect(cartReducer(testCart, action)).toEqual([
+      { ...catalogue[0], quantity: 3 },
+    ]);
+  });
+});
+
+describe('cartReducer - cleared_cart', () => {
+  it('clears a cart with 2 products x5 each', () => {
+    const action = {
+      type: 'cleared_cart',
+    };
+    const testCart = [
+      { ...catalogue[0], quantity: 5 },
+      { ...catalogue[1], quantity: 5 },
+    ];
+
+    expect(cartReducer(testCart, action)).toEqual([]);
+  });
+});

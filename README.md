@@ -6,17 +6,13 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- add CartPreview component
+- figure out design
 
 #### TODO LATER
 
 ##### Features
 
 - integration test
-- write removed_all
-- test removed_all
-- write cleared_cart
-- test cleared_cart
 - ? combine some reducer actions
 - add product pages
 - add cart page
@@ -28,6 +24,14 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - add credit
 
 #### DONE
+
+_0.2.5_
+
+- add CartPreview component
+- write deleted_item
+- test deleted_item
+- write cleared_cart
+- test cleared_cart
 
 _0.2.4_
 

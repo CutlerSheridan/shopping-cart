@@ -1,0 +1,15 @@
+.cartPreview {
+  margin: 1rem;
+  padding: 1rem 1.6rem;
+  width: 30rem;
+  background: beige;
+  border-radius: 0.5rem;
+  color: black;
+}
+.cartPreview-heading,
+.cartPreview-total {
+  margin: 1rem 0;
+}
+.cartPreview-item {
+  margin: 0.6rem 0;
+}

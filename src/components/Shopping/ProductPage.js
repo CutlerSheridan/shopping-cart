@@ -10,7 +10,7 @@ const ProductPage = () => {
   return (
     <div className="productPage-container">
       <h1>{product.name}</h1>
-      <div>${product.price}</div>
+      <div>${product.price.toFixed(2)}</div>
       <div>{product.description}</div>
       <Link className="productPage-dismiss" to="..">
         X
