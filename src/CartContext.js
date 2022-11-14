@@ -88,8 +88,8 @@ export const Item = (
 };
 let itemCount = 0;
 export const catalogue = [
-  Item(itemCount++, 'pumpkin', 25),
-  Item(itemCount++, 'squash', 7.5),
-  Item(itemCount++, 'zucchini', 0.99),
+  Item(itemCount++, 'pumpkin', 25, 'pumpkin description'),
+  Item(itemCount++, 'squash', 7.5, 'squash description'),
+  Item(itemCount++, 'zucchini', 0.99, 'zucchini description'),
 ];
 const initialCart = [];

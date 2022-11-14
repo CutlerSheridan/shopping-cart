@@ -6,3 +6,9 @@
   background: yellow;
   color: black;
 }
+.productCard-quantityControls {
+  display: flex;
+}
+.productCard-input {
+  width: 7rem;
+}

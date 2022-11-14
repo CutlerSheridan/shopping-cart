@@ -6,12 +6,13 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- add tester input for typed_value
+- add CartPreview component
 
 #### TODO LATER
 
 ##### Features
 
+- integration test
 - write removed_all
 - test removed_all
 - write cleared_cart
@@ -27,6 +28,10 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - add credit
 
 #### DONE
+
+_0.2.4_
+
+- add tester input for typed_value
 
 _0.2.3_
 
