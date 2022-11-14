@@ -45,6 +45,26 @@ export const cartReducer = (cart, action) => {
         .filter((x) => x.quantity > 0);
       return newCart;
     }
+    case 'typed_value': {
+      const { value } = action;
+      let exists = false;
+      const newCart = [...cart]
+        .map((x) => {
+          if (x.id === action.id) {
+            exists = true;
+            return { ...x, quantity: value };
+          }
+          return x;
+        })
+        .filter((x) => x.quantity > 0);
+      if (!exists && value > 0) {
+        newCart.push({
+          ...catalogue.find((x) => x.id === action.id),
+          quantity: value,
+        });
+      }
+      return newCart;
+    }
     default:
       throw Error('unknown action: ' + action.type);
   }

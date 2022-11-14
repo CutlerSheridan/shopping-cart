@@ -88,3 +88,68 @@ describe('cartReducer - decremented', () => {
     expect(cartReducer(testCart, action)).toEqual([]);
   });
 });
+
+describe('cartReducer - typed_value', () => {
+  it('increases value of item already in cart', () => {
+    const action = {
+      type: 'typed_value',
+      id: 1,
+      value: 4,
+    };
+    const testCart = [
+      { ...catalogue.find((x) => x.id === action.id), quantity: 1 },
+    ];
+
+    expect(cartReducer(testCart, action)).toEqual([
+      { ...catalogue.find((x) => x.id === action.id), quantity: 4 },
+    ]);
+  });
+  it('increases value of item not in cart', () => {
+    const action = {
+      type: 'typed_value',
+      id: 1,
+      value: 4,
+    };
+    const testCart = [];
+
+    expect(cartReducer(testCart, action)).toEqual([
+      { ...catalogue.find((x) => x.id === action.id), quantity: 4 },
+    ]);
+  });
+  it('decreases value of item already in cart', () => {
+    const action = {
+      type: 'typed_value',
+      id: 1,
+      value: 4,
+    };
+    const testCart = [
+      { ...catalogue.find((x) => x.id === action.id), quantity: 7 },
+    ];
+
+    expect(cartReducer(testCart, action)).toEqual([
+      { ...catalogue.find((x) => x.id === action.id), quantity: 4 },
+    ]);
+  });
+  it('deletes item from cart if input 0', () => {
+    const action = {
+      type: 'typed_value',
+      id: 1,
+      value: 0,
+    };
+    const testCart = [
+      { ...catalogue.find((x) => x.id === action.id), quantity: 7 },
+    ];
+
+    expect(cartReducer(testCart, action)).toEqual([]);
+  });
+  it('returns empty cart if typed is not in cart', () => {
+    const action = {
+      type: 'typed_value',
+      id: 0,
+      value: -2,
+    };
+    const testCart = [];
+
+    expect(cartReducer(testCart, action)).toEqual([]);
+  });
+});

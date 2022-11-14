@@ -6,8 +6,7 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- write typed_value
-- test typed_value
+- add tester input for typed_value
 
 #### TODO LATER
 
@@ -28,6 +27,11 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - add credit
 
 #### DONE
+
+_0.2.3_
+
+- write typed_value
+- test typed_value
 
 _0.2.2_
 
