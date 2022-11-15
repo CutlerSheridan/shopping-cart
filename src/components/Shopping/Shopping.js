@@ -1,19 +1,27 @@
 import './Shopping.css';
 import ProductCard from './ProductCard';
 import { Outlet } from 'react-router-dom';
-import { useCart } from '../../CartContext';
+import { useCart, catalogue } from '../../CartContext';
 import CartPreview from '../Cart/CartPreview';
 
 const Shopping = () => {
   const cart = useCart();
   return (
-    <div className="shopping-container">
-      <h1>This is Shopping</h1>
-      <ProductCard productId="0" />
-      <ProductCard productId="1" />
-      <ProductCard productId="2" />
-      <Outlet />
-      <CartPreview />
+    <div className="shopping-outerContainer">
+      <h1>Browse Products</h1>
+      <div className="shopping-innerContainer">
+        <div className="shopping-cartPreviewContainer">
+          <CartPreview />
+        </div>
+        <section className="shopping-content">
+          <div className="shopping-grid">
+            {catalogue.map((x) => (
+              <ProductCard productId={x.id} key={x.id} />
+            ))}
+          </div>
+          <Outlet />
+        </section>
+      </div>
     </div>
   );
 };

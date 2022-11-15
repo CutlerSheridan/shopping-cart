@@ -8,7 +8,7 @@ const App = () => {
     <CartProvider>
       <div className="app">
         <Navbar />
-        <div>This is App</div>
+        {/* <div>This is App</div> */}
         <Outlet />
       </div>
     </CartProvider>

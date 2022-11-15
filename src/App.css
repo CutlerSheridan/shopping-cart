@@ -1,4 +1,6 @@
 :root {
+  --clr-1: beige;
+  --clr-1-dark: rgb(217, 209, 179);
   font-size: 62.5%;
 }
 * {
@@ -15,6 +17,6 @@ body {
 }
 
 .app {
-  min-height: 100vh;
+  height: 100vh;
   background: skyblue;
 }

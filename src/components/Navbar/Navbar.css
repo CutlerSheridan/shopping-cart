@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   /* gap: 2rem; */
-  background: green;
+  background: var(--clr-1-dark);
 }
 .nav-link {
   margin: 2rem;

@@ -1,7 +1,19 @@
-.shopping-container {
-  /* Must have bottom padding or ProductPage has no bottom margin */
+.shopping-outerContainer {
   padding: 1rem;
   height: 100%;
-  background: purple;
-  color: white;
+  background: var(--clr-1-dark);
+}
+.shopping-outerContainer > h1 {
+  margin: 0 0 3rem 10rem;
+  font-size: 4rem;
+}
+.shopping-innerContainer {
+  margin: 2rem;
+  display: flex;
+  gap: 1.6rem;
+}
+.shopping-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }

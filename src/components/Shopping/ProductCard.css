@@ -1,14 +1,8 @@
 .productCard {
-  margin: 2rem;
+  /* margin: 2rem; */
   padding: 1rem;
   width: 20rem;
   height: 10rem;
-  background: yellow;
-  color: black;
-}
-.productCard-quantityControls {
-  display: flex;
-}
-.productCard-input {
-  width: 7rem;
+  background: var(--clr-1);
+  border-radius: 0.5rem;
 }

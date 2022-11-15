@@ -6,7 +6,7 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- figure out design
+- continue styling
 
 #### TODO LATER
 
@@ -24,6 +24,13 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - add credit
 
 #### DONE
+
+_0.3.0_
+
+- apply color scheme
+- restructure shopping layout
+- extract quantity controls into component
+- add quantity controls to product pages
 
 _0.2.5_
 

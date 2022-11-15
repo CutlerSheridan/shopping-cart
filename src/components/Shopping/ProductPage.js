@@ -2,6 +2,7 @@ import './ProductPage.css';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { catalogue } from '../../CartContext';
+import QuantitySelector from '../Cart/QuantitySelector';
 
 const ProductPage = () => {
   const { productId } = useParams();
@@ -15,6 +16,7 @@ const ProductPage = () => {
       <Link className="productPage-dismiss" to="..">
         X
       </Link>
+      <QuantitySelector productId={productId} />
     </div>
   );
 };

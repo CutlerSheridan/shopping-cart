@@ -1,14 +1,17 @@
 .cartPreview {
-  margin: 1rem;
   padding: 1rem 1.6rem;
-  width: 30rem;
-  background: beige;
+  /* width: 25rem; */
+  min-width: 15rem;
+  background: var(--clr-1);
   border-radius: 0.5rem;
   color: black;
 }
 .cartPreview-heading,
 .cartPreview-total {
-  margin: 1rem 0;
+  margin: 1.6rem 0;
+}
+.cartPreview-heading {
+  font-size: 2.6rem;
 }
 .cartPreview-item {
   margin: 0.6rem 0;

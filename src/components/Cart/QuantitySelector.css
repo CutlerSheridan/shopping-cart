@@ -1,0 +1,6 @@
+.quantityControls {
+  display: flex;
+}
+.qc-input {
+  width: 7rem;
+}

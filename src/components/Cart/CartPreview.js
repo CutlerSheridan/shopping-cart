@@ -7,17 +7,19 @@ const CartPreview = () => {
   return (
     <div className="cartPreview">
       <h2 className="cartPreview-heading">CART</h2>
-      {cart.length > 0
-        ? cart.map((x, index) => (
-            <div className="cartPreview-item" key={index}>
-              <h3>{x.name}</h3>
-              <div>
-                ${x.price.toFixed(2)} x {x.quantity} = $
-                {(x.price * x.quantity).toFixed(2)}
-              </div>
+      {cart.length > 0 ? (
+        cart.map((x, index) => (
+          <div className="cartPreview-item" key={index}>
+            <h3>{x.name}</h3>
+            <div>
+              ${x.price.toFixed(2)} x {x.quantity} = $
+              {(x.price * x.quantity).toFixed(2)}
             </div>
-          ))
-        : '- Empty -'}
+          </div>
+        ))
+      ) : (
+        <div className="cartPreview-total">- Empty -</div>
+      )}
       {cart.length > 0 ? (
         <h2 className="cartPreview-total">
           TOTAL: $
