@@ -5,5 +5,5 @@
 }
 .productPage-dismiss {
   margin: 0 1rem;
-  color: black;
+  color: var(--clr-text);
 }

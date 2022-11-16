@@ -7,13 +7,18 @@
   margin: 0 0 3rem 10rem;
   font-size: 4rem;
 }
-.shopping-innerContainer {
+.shopping-content {
   margin: 2rem;
   display: flex;
   gap: 1.6rem;
 }
 .shopping-grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem; */
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  /* justify-content: space-evenly; */
+  align-content: flex-start;
 }

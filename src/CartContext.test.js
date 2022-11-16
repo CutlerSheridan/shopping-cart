@@ -1,4 +1,9 @@
-import { Item, cartReducer, catalogue } from './CartContext';
+import {
+  Item,
+  cartReducer,
+  catalogue,
+  handleTypedQuantity,
+} from './CartContext';
 
 describe('Item', () => {
   it('produces all fields from shorthand declaration', () => {
@@ -182,5 +187,14 @@ describe('cartReducer - cleared_cart', () => {
     ];
 
     expect(cartReducer(testCart, action)).toEqual([]);
+  });
+});
+
+describe('handleTypedQuantity', () => {
+  it('rounds down from decimal', () => {
+    expect(handleTypedQuantity(12.7)).toBe(12);
+  });
+  it('reverts num > 999 to 999', () => {
+    expect(handleTypedQuantity(1240)).toBe(999);
   });
 });

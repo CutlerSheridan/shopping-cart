@@ -8,6 +8,7 @@ const QuantitySelector = (props) => {
   return (
     <div className="quantityControls">
       <button
+        className="qc-stepButton app-button"
         onClick={() => {
           dispatch({
             type: 'decremented',
@@ -25,7 +26,6 @@ const QuantitySelector = (props) => {
             type: 'typed_value',
             id: productId,
             value: +e.target.value,
-            step: 1,
           });
         }}
         value={(() => {
@@ -35,6 +35,7 @@ const QuantitySelector = (props) => {
         placeholder="0"
       ></input>
       <button
+        className="qc-stepButton app-button"
         onClick={() => {
           dispatch({
             type: 'incremented',

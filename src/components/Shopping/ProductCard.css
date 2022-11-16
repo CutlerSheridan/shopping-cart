@@ -1,8 +1,18 @@
 .productCard {
-  /* margin: 2rem; */
   padding: 1rem;
-  width: 20rem;
-  height: 10rem;
+  min-width: 22rem;
+  max-width: 25rem;
   background: var(--clr-1);
   border-radius: 0.5rem;
+}
+.productCard > h3 {
+  font-size: 2.6rem;
+  text-transform: capitalize;
+}
+.productCard-price {
+  font-size: 2rem;
+}
+.productCard-link {
+  margin-bottom: 1rem;
+  display: inline-block;
 }

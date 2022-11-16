@@ -52,7 +52,7 @@ export const cartReducer = (cart, action) => {
         .map((x) => {
           if (x.id === action.id) {
             exists = true;
-            return { ...x, quantity: Math.round(value) };
+            return { ...x, quantity: handleTypedQuantity(value) };
           }
           return x;
         })
@@ -60,7 +60,7 @@ export const cartReducer = (cart, action) => {
       if (!exists && value > 0) {
         newCart.push({
           ...catalogue.find((x) => x.id === action.id),
-          quantity: Math.round(value),
+          quantity: handleTypedQuantity(value),
         });
       }
       return newCart;
@@ -78,6 +78,19 @@ export const cartReducer = (cart, action) => {
     default:
       throw Error('unknown action: ' + action.type);
   }
+};
+export const handleTypedQuantity = (quantity) => {
+  let result = quantity;
+  if (result > 999) {
+    return 999;
+  }
+  if (result < 0) {
+    return 0;
+  }
+  while (result % 1 !== 0) {
+    result = (result * 10 - 1) / 10;
+  }
+  return result;
 };
 
 export const useCart = () => {
@@ -101,5 +114,6 @@ export const catalogue = [
   Item(itemCount++, 'pumpkin', 25, 'pumpkin description'),
   Item(itemCount++, 'squash', 7.5, 'squash description'),
   Item(itemCount++, 'zucchini', 0.99, 'zucchini description'),
+  Item(itemCount++, 'apple', 1.5, 'apple description'),
 ];
 const initialCart = [];

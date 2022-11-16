@@ -9,19 +9,20 @@ const Shopping = () => {
   return (
     <div className="shopping-outerContainer">
       <h1>Browse Products</h1>
-      <div className="shopping-innerContainer">
+
+      <section className="shopping-content">
         <div className="shopping-cartPreviewContainer">
           <CartPreview />
         </div>
-        <section className="shopping-content">
-          <div className="shopping-grid">
-            {catalogue.map((x) => (
-              <ProductCard productId={x.id} key={x.id} />
-            ))}
-          </div>
-          <Outlet />
-        </section>
-      </div>
+
+        <div className="shopping-grid">
+          {catalogue.map((x) => (
+            <ProductCard productId={x.id} key={x.id} />
+          ))}
+        </div>
+
+        <Outlet />
+      </section>
     </div>
   );
 };

@@ -1,6 +1,23 @@
 .quantityControls {
   display: flex;
+  align-items: center;
+}
+.qc-stepButton {
+  padding: 0;
+  width: 2.3rem;
+  font-weight: 400;
 }
 .qc-input {
-  width: 7rem;
+  margin: 0 0.6rem;
+  padding: 0.2rem 0.6rem;
+  width: 4.5ch;
+  text-align: right;
+}
+.qc-input::-webkit-outer-spin-button,
+.qc-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.qc-input[type='number'] {
+  -moz-appearance: textfield;
 }

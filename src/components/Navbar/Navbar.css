@@ -1,11 +1,12 @@
 nav {
+  padding: 0 1.6rem;
   display: flex;
   justify-content: flex-end;
-  /* gap: 2rem; */
+  gap: 1rem;
   background: var(--clr-1-dark);
+  border-bottom: 1px solid red;
 }
 .nav-link {
-  margin: 2rem;
-  padding: 1rem;
-  background: pink;
+  margin: 1.6rem 0;
+  font-size: 2rem;
 }

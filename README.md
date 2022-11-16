@@ -13,7 +13,7 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 ##### Features
 
 - integration test
-- ? combine some reducer actions
+- add home page content
 - add product pages
 - add cart page
 
@@ -21,9 +21,19 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 ##### Style
 
+- add icons for in- and decrement arrows
 - add credit
 
 #### DONE
+
+_0.3.1_
+
+- make cart preview look nicer
+- make product cards look nicer
+- write and test handleTypedQuantity to pass typed values through before assigning them
+- add 'Go to cart' button to cart preview
+- choose secondary color
+- extract shared styling across buttons into parental class
 
 _0.3.0_
 

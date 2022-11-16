@@ -1,6 +1,10 @@
 :root {
+  --clr-text: black;
+  --clr-text-2: white;
   --clr-1: beige;
   --clr-1-dark: rgb(217, 209, 179);
+  --clr-2: rgb(15, 176, 15);
+  --clr-2-dark: rgb(11, 146, 11);
   font-size: 62.5%;
 }
 * {
@@ -19,4 +23,21 @@ body {
 .app {
   height: 100vh;
   background: skyblue;
+}
+.app-button {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-2);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--clr-text-2);
+  cursor: pointer;
+}
+.app-button:hover {
+  background: var(--clr-2-dark);
 }
