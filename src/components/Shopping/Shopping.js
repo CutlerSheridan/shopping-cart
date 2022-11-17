@@ -8,21 +8,21 @@ const Shopping = () => {
   const cart = useCart();
   return (
     <div className="shopping-outerContainer">
-      <h1>Browse Products</h1>
+      <h1>Shop Our Products</h1>
 
       <section className="shopping-content">
-        <div className="shopping-cartPreviewContainer">
-          <CartPreview />
-        </div>
-
         <div className="shopping-grid">
           {catalogue.map((x) => (
             <ProductCard productId={x.id} key={x.id} />
           ))}
         </div>
 
-        <Outlet />
+        <div className="shopping-cartPreviewContainer">
+          <CartPreview />
+        </div>
       </section>
+
+      <Outlet />
     </div>
   );
 };

@@ -1,3 +1,13 @@
 .home-container {
-  background: orange;
+  height: 100%;
+  background: var(--clr-1-dark);
+}
+.home-container > h1 {
+  font-size: 6rem;
+  text-align: center;
+}
+.home-text {
+  margin: 2.4rem auto;
+  width: 45ch;
+  font-size: 2.3rem;
 }

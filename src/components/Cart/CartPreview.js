@@ -14,7 +14,7 @@ const CartPreview = () => {
             <h3>{x.name}</h3>
             <div className="cartPreview-itemCost">
               <div className="cartPreview-itemBaseCost">
-                ${x.price.toFixed(2)} x {x.quantity}{' '}
+                {x.quantity} x ${x.price.toFixed(2)}{' '}
               </div>
               <div className="cartPreview-itemCostTotal">
                 = ${(x.price * x.quantity).toFixed(2)}

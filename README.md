@@ -6,7 +6,8 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- continue styling
+- decide what to sell
+- add images for items
 
 #### TODO LATER
 
@@ -22,9 +23,18 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 ##### Style
 
 - add icons for in- and decrement arrows
+- make Cart page prettier
 - add credit
 
 #### DONE
+
+_0.4.0_
+
+- swap placement of cart preview on shopping page with product grid
+- fix shopping heading
+- add some filler Home content
+- create and route a Cart page
+- make Cart page display items in cart and total
 
 _0.3.1_
 

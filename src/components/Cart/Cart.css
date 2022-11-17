@@ -1,0 +1,21 @@
+.cart-container {
+  padding: 0 3rem;
+  height: 100%;
+  background: var(--clr-1-dark);
+}
+.cart-container > h1 {
+  font-size: 4.7rem;
+}
+.cart-item {
+  margin: 1.6rem 0;
+  background: var(--clr-1);
+}
+.cart-itemCost {
+  margin-top: 0.5rem;
+  display: flex;
+}
+.cart-total {
+  margin-top: 2.1rem;
+  font-size: 2.6rem;
+  background: var(--clr-1);
+}

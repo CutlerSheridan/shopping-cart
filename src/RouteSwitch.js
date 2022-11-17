@@ -3,6 +3,7 @@ import App from './App';
 import Home from './components/Home/Home';
 import Shopping from './components/Shopping/Shopping';
 import ProductPage from './components/Shopping/ProductPage';
+import Cart from './components/Cart/Cart';
 
 const RouteSwitch = () => {
   return (
@@ -14,6 +15,7 @@ const RouteSwitch = () => {
           <Route path="shopping" element={<Shopping />}>
             <Route path=":productId" element={<ProductPage />} />
           </Route>
+          <Route path="cart" element={<Cart />} />
         </Route>
       </Routes>
     </Router>
