@@ -10,6 +10,7 @@
 .shopping-content {
   margin: 2rem;
   display: flex;
+  justify-content: space-between;
   gap: 1.6rem;
 }
 .shopping-grid {

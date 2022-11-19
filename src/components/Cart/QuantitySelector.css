@@ -1,23 +1,24 @@
-.quantityControls {
+.quantitySelector {
   display: flex;
   align-items: center;
 }
-.qc-stepButton {
+.qs-stepButton {
   padding: 0;
-  width: 2.3rem;
+  width: 2rem;
   font-weight: 400;
 }
-.qc-input {
+.qs-input {
   margin: 0 0.6rem;
   padding: 0.2rem 0.6rem;
   width: 4.5ch;
+  font-size: 1.6rem;
   text-align: right;
 }
-.qc-input::-webkit-outer-spin-button,
-.qc-input::-webkit-inner-spin-button {
+.qs-input::-webkit-outer-spin-button,
+.qs-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.qc-input[type='number'] {
+.qs-input[type='number'] {
   -moz-appearance: textfield;
 }

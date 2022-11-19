@@ -8,14 +8,20 @@
 }
 .cart-item {
   margin: 1.6rem 0;
+  text-transform: capitalize;
   background: var(--clr-1);
+}
+.cart-itemBaseCost {
+  text-transform: none;
 }
 .cart-itemCost {
   margin-top: 0.5rem;
   display: flex;
+  white-space: pre;
 }
 .cart-total {
   margin-top: 2.1rem;
   font-size: 2.6rem;
   background: var(--clr-1);
+  white-space: pre;
 }

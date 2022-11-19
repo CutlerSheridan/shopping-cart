@@ -6,8 +6,8 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- decide what to sell
-- add images for items
+- lower product cap to 99
+- get product page working
 
 #### TODO LATER
 
@@ -15,18 +15,28 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 - integration test
 - add home page content
-- add product pages
-- add cart page
+- ? add ability to sort items
 
 ##### Behavior
 
 ##### Style
 
-- add icons for in- and decrement arrows
+- make Cart nav button a single width
+- add icons for in- and decrement arrows of QuantitySelector
 - make Cart page prettier
+- fill out home page
+- add more shop items
 - add credit
 
 #### DONE
+
+_0.4.1_
+
+- fix shopping grid so cart is on right side regardless of number of products
+- get dynamic image importing working
+  - had to use require() and concatenate the string path instead of using a template literal
+- add some shop items and pictures
+- refactor prices with toLocaleString() instead of forcing it
 
 _0.4.0_
 

@@ -9,14 +9,21 @@ const ProductPage = () => {
   const product = catalogue.find((x) => x.id === +productId);
 
   return (
-    <div className="productPage-container">
-      <h1>{product.name}</h1>
-      <div>${product.price.toFixed(2)}</div>
-      <div>{product.description}</div>
-      <Link className="productPage-dismiss" to="..">
-        X
-      </Link>
-      <QuantitySelector productId={productId} />
+    <div className="productPage-outerContainer">
+      <div className="productPage-innerContainer">
+        <h1>{product.name}</h1>
+        <div>
+          {product.price.toLocaleString(undefined, {
+            currency: 'USD',
+            style: 'currency',
+          })}
+        </div>
+        <div>{product.description}</div>
+        <Link className="productPage-dismiss" to="..">
+          X
+        </Link>
+        <QuantitySelector productId={productId} />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import './CartPreview.css';
 import { useCart, useCartDispatch } from '../../CartContext';
 import { Link } from 'react-router-dom';
+import { useDebugValue } from 'react';
 
 const CartPreview = () => {
   const cart = useCart();
@@ -14,10 +15,19 @@ const CartPreview = () => {
             <h3>{x.name}</h3>
             <div className="cartPreview-itemCost">
               <div className="cartPreview-itemBaseCost">
-                {x.quantity} x ${x.price.toFixed(2)}{' '}
+                {x.quantity}
+                {' x '}
+                {x.price.toLocaleString(undefined, {
+                  currency: 'USD',
+                  style: 'currency',
+                })}{' '}
               </div>
               <div className="cartPreview-itemCostTotal">
-                = ${(x.price * x.quantity).toFixed(2)}
+                {'= '}
+                {(x.price * x.quantity).toLocaleString(undefined, {
+                  currency: 'USD',
+                  style: 'currency',
+                })}
               </div>
             </div>
           </div>
@@ -29,8 +39,13 @@ const CartPreview = () => {
       )}
       {cart.length > 0 ? (
         <h2 className="cartPreview-total">
-          Total:{'  '}$
-          {cart.reduce((prev, x) => prev + x.quantity * x.price, 0).toFixed(2)}
+          Total:{'  '}
+          {cart
+            .reduce((prev, x) => prev + x.quantity * x.price, 0)
+            .toLocaleString(undefined, {
+              currency: 'USD',
+              style: 'currency',
+            })}
         </h2>
       ) : (
         <></>

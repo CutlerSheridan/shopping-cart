@@ -110,10 +110,54 @@ export const Item = (
   return { id, name, price, description, imgPath };
 };
 let itemCount = 0;
+// export const catalogue = [
+//   Item(itemCount++, 'pumpkin', 25, 'pumpkin description'),
+//   Item(itemCount++, 'squash', 7.5, 'squash description'),
+//   Item(itemCount++, 'zucchini', 0.99, 'zucchini description'),
+//   Item(itemCount++, 'apple', 1.5, 'apple description'),
+// ];
 export const catalogue = [
-  Item(itemCount++, 'pumpkin', 25, 'pumpkin description'),
-  Item(itemCount++, 'squash', 7.5, 'squash description'),
-  Item(itemCount++, 'zucchini', 0.99, 'zucchini description'),
-  Item(itemCount++, 'apple', 1.5, 'apple description'),
+  Item(
+    itemCount++,
+    'empty bottle',
+    4,
+    "The classic.  A simple, empty glass bottle.  A staple in any potion-maker's toolset.",
+    'empty-bottle.webp'
+  ),
+  Item(
+    itemCount++,
+    'Set of bottles',
+    10,
+    "Three empty bottles, for when you realize your stock is running low.  Don't kid yourself... you know you'll use them eventually.",
+    'three-bottles.png'
+  ),
+  Item(
+    itemCount++,
+    'Mermaid tears',
+    775,
+    "These tears are brimming with magical potential.  Used in all sorts of potions for centuries, just one or two drops can augment the strength of a potion or change its effects entirely.  Yes they're expensive, but do you know how hard these things are to collect?",
+    'mermaid-tears.png'
+  ),
+  Item(
+    itemCount++,
+    'Druidic balm',
+    63,
+    'No one is quite sure what this does, but the druids swear by it.',
+    'druidic-balm.png'
+  ),
+  Item(
+    itemCount++,
+    'Love potion',
+    226,
+    'Difficult to brew and banned in many regions, demand remains for this tantalizing potion.  Use responsibly.',
+    'love-potion.png'
+  ),
+  Item(
+    itemCount++,
+    'Bulbadox juice',
+    47,
+    "Yes, we know it's not filled all the way up—that's because the vapor is the best part.  Pull the stopper and take a whiff next time your brain needs a little kick-start.  You won't know anything you didn't already, but it will supercharge your memory.  Remember what you had for breakfast a year ago today?  You will now!",
+    'bulbadox-juice.png'
+  ),
 ];
 const initialCart = [];

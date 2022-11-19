@@ -14,10 +14,19 @@ const Cart = () => {
             <h3>{x.name}</h3>
             <div className="cart-itemCost">
               <div className="cart-itemBaseCost">
-                {x.quantity} x ${x.price.toFixed(2)}{' '}
+                {x.quantity}
+                {' x '}
+                {x.price.toLocaleString(undefined, {
+                  currency: 'USD',
+                  style: 'currency',
+                })}{' '}
               </div>
               <div className="cart-itemCostTotal">
-                = ${(x.price * x.quantity).toFixed(2)}
+                {'= '}
+                {(x.price * x.quantity).toLocaleString(undefined, {
+                  currency: 'USD',
+                  style: 'currency',
+                })}
               </div>
             </div>
           </div>
@@ -27,8 +36,13 @@ const Cart = () => {
       )}
       {cart.length > 0 ? (
         <h2 className="cart-total">
-          Total:{'  '}$
-          {cart.reduce((prev, x) => prev + x.quantity * x.price, 0).toFixed(2)}
+          Total:{'  '}
+          {cart
+            .reduce((prev, x) => prev + x.quantity * x.price, 0)
+            .toLocaleString(undefined, {
+              currency: 'USD',
+              style: 'currency',
+            })}
         </h2>
       ) : (
         <></>

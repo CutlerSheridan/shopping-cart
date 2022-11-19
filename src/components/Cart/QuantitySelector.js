@@ -6,9 +6,9 @@ const QuantitySelector = (props) => {
   const dispatch = useCartDispatch();
   const productId = +props.productId;
   return (
-    <div className="quantityControls">
+    <div className={'quantitySelector'}>
       <button
-        className="qc-stepButton app-button"
+        className="qs-stepButton app-button"
         onClick={() => {
           dispatch({
             type: 'decremented',
@@ -20,7 +20,7 @@ const QuantitySelector = (props) => {
       </button>
       <input
         type="number"
-        className="qc-input"
+        className="qs-input"
         onChange={(e) => {
           dispatch({
             type: 'typed_value',
@@ -35,7 +35,7 @@ const QuantitySelector = (props) => {
         placeholder="0"
       ></input>
       <button
-        className="qc-stepButton app-button"
+        className="qs-stepButton app-button"
         onClick={() => {
           dispatch({
             type: 'incremented',
