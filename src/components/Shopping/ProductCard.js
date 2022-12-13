@@ -7,7 +7,10 @@ const ProductCard = (props) => {
   const productId = +props.productId;
   const cart = useCart();
   const item = catalogue.find((x) => x.id === productId);
-  const imgPath = `../../images/${item.imgPath}`;
+  // const imgPath = `../../images/${item.imgPath}`;
+  const disableBodyScroll = () => {
+    document.querySelector('body').classList.add('shopping-noScroll');
+  };
 
   return (
     <div className="productCard">
@@ -23,7 +26,11 @@ const ProductCard = (props) => {
           style: 'currency',
         })}
       </div>
-      <Link className="productCard-link" to={`${productId}`}>
+      <Link
+        className="productCard-link"
+        to={`${productId}`}
+        onClick={disableBodyScroll}
+      >
         Quick view
       </Link>
       <div className="productCard-quantitySelector">

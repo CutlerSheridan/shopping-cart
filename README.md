@@ -6,8 +6,7 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- lower product cap to 99
-- get product page working
+- fix shopping page layout on mobile
 
 #### TODO LATER
 
@@ -29,6 +28,11 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - add credit
 
 #### DONE
+
+_0.4.2_
+
+- lower product cap to 99
+- get product page working and looking decent
 
 _0.4.1_
 

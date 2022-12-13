@@ -81,8 +81,8 @@ export const cartReducer = (cart, action) => {
 };
 export const handleTypedQuantity = (quantity) => {
   let result = quantity;
-  if (result > 999) {
-    return 999;
+  if (result > 99) {
+    return 99;
   }
   if (result < 0) {
     return 0;
@@ -149,7 +149,7 @@ export const catalogue = [
     itemCount++,
     'Love potion',
     226,
-    'Difficult to brew and banned in many regions, demand remains for this tantalizing potion.  Use responsibly.',
+    'Difficult to brew and banned in many regions, demand remains high for this tantalizing potion.  Use responsibly.',
     'love-potion.png'
   ),
   Item(

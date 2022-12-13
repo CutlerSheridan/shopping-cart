@@ -23,3 +23,6 @@
   /* justify-content: space-evenly; */
   align-content: flex-start;
 }
+.shopping-noScroll {
+  overflow: hidden;
+}
