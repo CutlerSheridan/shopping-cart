@@ -5,7 +5,12 @@
   --clr-1-dark: rgb(217, 209, 179);
   --clr-2: rgb(15, 176, 15);
   --clr-2-dark: rgb(11, 146, 11);
-  font-size: 62.5%;
+  font-size: 55%;
+}
+@media only screen and (min-width: 600px) {
+  :root {
+    font-size: 62.5%;
+  }
 }
 * {
   margin: 0;

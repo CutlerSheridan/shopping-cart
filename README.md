@@ -6,7 +6,8 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- fix shopping page layout on mobile
+- fix shopping page grid on mobile
+- fix home page on mobile
 
 #### TODO LATER
 
@@ -28,6 +29,10 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - add credit
 
 #### DONE
+
+_0.4.3_
+
+- fix cart preview on mobile
 
 _0.4.2_
 

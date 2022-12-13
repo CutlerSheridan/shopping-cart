@@ -16,11 +16,13 @@ const CartPreview = () => {
             <div className="cartPreview-itemCost">
               <div className="cartPreview-itemBaseCost">
                 {x.quantity}
-                {' x '}
-                {x.price.toLocaleString(undefined, {
-                  currency: 'USD',
-                  style: 'currency',
-                })}{' '}
+                <span className="cartPreview-itemBaseCost-hideable">
+                  {' x '}
+                  {x.price.toLocaleString(undefined, {
+                    currency: 'USD',
+                    style: 'currency',
+                  })}
+                </span>{' '}
               </div>
               <div className="cartPreview-itemCostTotal">
                 {'= '}
