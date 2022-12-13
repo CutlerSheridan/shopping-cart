@@ -1,14 +1,15 @@
 .cartPreview {
+  display: none;
   padding: 1rem 1.6rem;
-  min-width: 13.5rem;
+  min-width: 22rem;
+  width: max-content;
   background: var(--clr-1);
   border-radius: 0.5rem;
   text-transform: capitalize;
 }
 @media only screen and (min-width: 600px) {
   .cartPreview {
-    min-width: 22.8rem;
-    width: max-content;
+    display: block;
   }
 }
 .cartPreview-heading {
@@ -34,6 +35,7 @@
 }
 .cartPreview-itemCost {
   display: flex;
+  justify-content: space-between;
   white-space: pre-wrap;
   font-size: 1.6rem;
   text-transform: none;
@@ -43,18 +45,6 @@
 }
 .cartPreview-itemCostTotal {
   white-space: nowrap;
-}
-.cartPreview-itemBaseCost-hideable {
-  display: none;
-}
-@media only screen and (min-width: 600px) {
-  .cartPreview-itemCost {
-    display: flex;
-    justify-content: space-between;
-  }
-  .cartPreview-itemBaseCost-hideable {
-    display: contents;
-  }
 }
 .cartPreview-total {
   position: relative;
@@ -72,25 +62,11 @@
   background: var(--clr-text);
 }
 .cartPreview-total-empty {
-  font-size: 1.6rem;
   font-style: italic;
-  white-space: nowrap;
-}
-@media only screen and (min-width: 600px) {
-  .cartPreview-total-empty {
-    font-size: inherit;
-  }
 }
 .cartPreview-button {
   margin: 0.3rem 0;
-  padding: 0.3rem 0.6rem;
   width: 100%;
   height: 3rem;
-  font-size: 1.4rem;
-}
-@media only screen and (min-width: 600px) {
-  .cartPreview-button {
-    padding: 1rem 2rem;
-    font-size: 1.8rem;
-  }
+  font-size: 1.8rem;
 }

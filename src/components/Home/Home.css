@@ -8,6 +8,7 @@
 }
 .home-text {
   margin: 2.4rem auto;
-  width: 45ch;
+  padding: 0 1.6rem;
+  max-width: 45ch;
   font-size: 2.3rem;
 }

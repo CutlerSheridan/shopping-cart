@@ -1,9 +1,14 @@
 nav {
   padding: 0 1.6rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1rem;
   background: var(--clr-1-dark);
+}
+@media only screen and (min-width: 600px) {
+  nav {
+    justify-content: flex-end;
+  }
 }
 .nav-link {
   margin: 1.6rem 0;

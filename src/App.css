@@ -27,7 +27,7 @@ body {
 
 .app {
   height: 100vh;
-  background: skyblue;
+  background: var(--clr-1-dark);
 }
 .app-button {
   padding: 1rem 2rem;
@@ -43,6 +43,14 @@ body {
   color: var(--clr-text-2);
   cursor: pointer;
 }
-.app-button:hover {
+.app-button:active {
   background: var(--clr-2-dark);
+}
+@media (hover: hover) {
+  .app-button:hover {
+    background: var(--clr-2-dark);
+  }
+  .app-button:active {
+    background: var(--clr-2);
+  }
 }

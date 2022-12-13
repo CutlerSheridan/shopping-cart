@@ -13,7 +13,6 @@
 .productPage-innerContainer {
   margin: 2rem;
   padding: 2rem;
-  /* width: 25rem; */
   width: 40ch;
   border-radius: 0.5rem;
   background: var(--clr-1);

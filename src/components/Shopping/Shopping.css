@@ -5,24 +5,35 @@
   background: var(--clr-1-dark);
 }
 .shopping-outerContainer > h1 {
-  margin: 0 0 3rem 2rem;
-  font-size: 4.7rem;
+  margin: 0.4rem 0 2rem 2rem;
+  font-size: 4rem;
+}
+@media only screen and (min-width: 600px) {
+  .shopping-outerContainer > h1 {
+    margin: 0 0 3rem 2rem;
+    font-size: 4.7rem;
+  }
 }
 .shopping-content {
   margin: 2rem;
   display: flex;
   justify-content: space-between;
-  gap: 1.6rem;
 }
 .shopping-grid {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem; */
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  /* justify-content: space-evenly; */
+  gap: 1.3rem;
   align-content: flex-start;
+}
+@media only screen and (min-width: 600px) {
+  .shopping-content {
+    gap: 1.6rem;
+  }
+  .shopping-grid {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
 }
 .shopping-noScroll {
   overflow: hidden;

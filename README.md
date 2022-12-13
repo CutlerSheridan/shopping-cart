@@ -6,15 +6,13 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- fix shopping page grid on mobile
-- fix home page on mobile
+- make Cart page prettier
 
 #### TODO LATER
 
 ##### Features
 
 - integration test
-- add home page content
 - ? add ability to sort items
 
 ##### Behavior
@@ -23,12 +21,18 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 - make Cart nav button a single width
 - add icons for in- and decrement arrows of QuantitySelector
-- make Cart page prettier
 - fill out home page
 - add more shop items
 - add credit
 
 #### DONE
+
+_0.4.4_
+
+- fix shopping page on mobile
+- fix nav bar on mobile
+- fix home page on mobile
+- fix mobile button press color changes vs desktop hovering
 
 _0.4.3_
 
