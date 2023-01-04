@@ -6,12 +6,14 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- make Cart page prettier
+- add icons for in- and decrement arrows of QuantitySelector
+- add credit
 
 #### TODO LATER
 
 ##### Features
 
+- ? add "clear" button to each Quantity Selector
 - integration test
 - ? add ability to sort items
 
@@ -19,13 +21,16 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 ##### Style
 
-- make Cart nav button a single width
-- add icons for in- and decrement arrows of QuantitySelector
 - fill out home page
 - add more shop items
-- add credit
 
 #### DONE
+
+_0.4.5_
+
+- make Cart nav button a single width
+- make Cart page prettier
+- add quantity selectors to each cart item
 
 _0.4.4_
 

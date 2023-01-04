@@ -1,5 +1,5 @@
 nav {
-  padding: 0 1.6rem;
+  padding: 0.5rem 1.6rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -13,4 +13,11 @@ nav {
 .nav-link {
   margin: 1.6rem 0;
   font-size: 2rem;
+  width: 11.5rem;
+}
+.cartButton {
+  justify-content: space-between;
+}
+.cartButton > * {
+  white-space: pre;
 }
