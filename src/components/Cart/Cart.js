@@ -8,22 +8,27 @@ const Cart = () => {
   return (
     <div className="cart-container">
       <div className="cart-innerContainer">
-        <h1>Cart</h1>
+        <div className="cart-headerContainer">
+          <h1>Cart</h1>
+          <div className="cart-headerCost">Cost</div>
+        </div>
         {cart.length > 0 ? (
           cart.map((x, index) => (
-            <div className="cart-item" key={index}>
+            <div
+              className={`cart-item ${
+                index < cart.length - 1 ? 'cart-item-notLast' : ''
+              }`}
+              key={index}
+            >
               <h3>{x.name}</h3>
               <div className="cart-itemCost">
                 <div className="cart-itemBaseCost">
-                  {x.quantity}
-                  {' x '}
                   {x.price.toLocaleString(undefined, {
                     currency: 'USD',
                     style: 'currency',
                   })}{' '}
                 </div>
                 <div className="cart-itemCostTotal">
-                  {'= '}
                   {(x.price * x.quantity).toLocaleString(undefined, {
                     currency: 'USD',
                     style: 'currency',

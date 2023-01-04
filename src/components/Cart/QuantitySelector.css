@@ -4,14 +4,15 @@
 }
 .qs-stepButton {
   padding: 0;
-  width: 2rem;
-  font-weight: 400;
+  width: 2.2rem;
+  display: flex;
+  justify-content: center;
 }
 .qs-input {
   margin: 0 0.6rem;
   padding: 0.2rem 0.6rem;
-  width: 4.5ch;
-  font-size: 1.6rem;
+  width: 3.5ch;
+  font-size: max(1.6rem, 16px);
   text-align: right;
 }
 .qs-input::-webkit-outer-spin-button,

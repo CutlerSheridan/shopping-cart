@@ -1,14 +1,25 @@
 import './QuantitySelector.css';
 import { useCart, useCartDispatch } from '../../CartContext';
+import { useEffect } from 'react';
 
 const QuantitySelector = (props) => {
   const cart = useCart();
   const dispatch = useCartDispatch();
   const productId = +props.productId;
+
+  useEffect(() => {
+    const icons = Array.from(
+      document.querySelectorAll('.material-symbols-outlined')
+    );
+    icons.forEach((icon) => {
+      icon.style.opacity = 1;
+    });
+  }, []);
+
   return (
     <div className={'quantitySelector'}>
       <button
-        className="qs-stepButton app-button"
+        className="qs-stepButton app-button material-symbols-outlined"
         onClick={() => {
           dispatch({
             type: 'decremented',
@@ -16,7 +27,7 @@ const QuantitySelector = (props) => {
           });
         }}
       >
-        {'<'}
+        {'chevron_left'}
       </button>
       <input
         type="number"
@@ -35,7 +46,7 @@ const QuantitySelector = (props) => {
         placeholder="0"
       ></input>
       <button
-        className="qs-stepButton app-button"
+        className="qs-stepButton app-button material-symbols-outlined"
         onClick={() => {
           dispatch({
             type: 'incremented',
@@ -43,7 +54,7 @@ const QuantitySelector = (props) => {
           });
         }}
       >
-        {`>`}
+        {`chevron_right`}
       </button>
     </div>
   );

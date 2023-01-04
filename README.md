@@ -6,25 +6,36 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- add icons for in- and decrement arrows of QuantitySelector
 - add credit
 
 #### TODO LATER
 
 ##### Features
 
-- ? add "clear" button to each Quantity Selector
 - integration test
+- ? add "clear" button to each Quantity Selector
 - ? add ability to sort items
 
 ##### Behavior
 
 ##### Style
 
+- make shopping page show two columns on mobile instead of three
 - fill out home page
 - add more shop items
 
 #### DONE
+
+_0.4.6_
+
+- make Cart page way better
+  - add quantity selector to each Cart item
+  - move item totals to right side
+  - add dividers between Cart items
+- add icons for in- and decrement arrows of QuantitySelector
+- center icons
+- adjust QS font size
+- make web icons invisible until they load
 
 _0.4.5_
 

@@ -2,6 +2,7 @@ import './App.css';
 import { Outlet } from 'react-router-dom';
 import { CartProvider } from './CartContext';
 import Navbar from './components/Navbar/Navbar';
+import { useEffect } from 'react';
 
 const App = () => {
   return (
