@@ -3,24 +3,24 @@ import './Home.css';
 const Home = () => {
   return (
     <section className="home-container">
-      <h1>This is Home</h1>
+      <h1>Apothique</h1>
       <p className="home-text">
-        Come on in. Have a look around. If you're in the market for some
-        fine-as-hell produce, then boy oh boy do we have some great products for
-        you.
+        If you need potions, you've come to the right place.
       </p>
       <p className="home-text">
-        We've got apples, peas, corn, squash, zucchini, cucumbers, pigs, cows,
-        chickens, turkeys, eggs—YOU NAAAAME IT!
+        Apothique employs only the very best potion masters working today. That
+        way, you never have to question our quality—our potions, too, are only
+        the very best.
       </p>
       <p className="home-text">
-        Everything you've ever wanted, everything you've dreamt of, is here
-        within our store just waiting for a helpless victim—I mean, buyer. We
-        take a variety of payments, too—Visa, Mastercard, Paypal, souls...
+        More into home-brewing? We've got you covered. In addition to pre-brewed
+        concoctions, we carry a vast supply of high-quality potion ingredients,
+        too. You won't find a fresher bezoar or finer ground bubotuber anywhere
+        else.
       </p>
       <p className="home-text">
-        Look, my man, just take a look at the fucking store and buy some shit.
-        Peace out.
+        So take a look at our products, and get in touch if you have any
+        questions. We know you won't be disappointed.
       </p>
     </section>
   );

@@ -1,16 +1,15 @@
 .productCard {
   padding: 1rem;
   padding-bottom: 1.4rem;
-  width: 11rem;
+  width: 16rem;
   display: flex;
   flex-direction: column;
   background: var(--clr-1);
   border-radius: 0.5rem;
 }
-
 .productCard-imgContainer {
   margin-bottom: 1rem;
-  height: 9rem;
+  height: 13rem;
   border: 3px solid var(--clr-1);
   border-radius: 0.3rem;
 }
@@ -20,7 +19,8 @@
   }
   .productCard-imgContainer {
     height: 16.5rem;
-    background: linear-gradient(var(--clr-1-dark), 70%, var(--clr-1) 100%);
+    /* background: linear-gradient(var(--clr-1-dark), 70%, var(--clr-1) 100%); */
+    background: var(--clr-1);
   }
 }
 .productCard-imgContainer > img {

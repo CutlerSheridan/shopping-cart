@@ -8,7 +8,7 @@ const Shopping = () => {
   const cart = useCart();
   return (
     <div className="shopping-outerContainer">
-      <h1>Shop Our Products</h1>
+      <h1>Products</h1>
 
       <section className="shopping-content">
         <div className="shopping-grid">

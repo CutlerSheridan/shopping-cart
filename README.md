@@ -13,18 +13,30 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 ##### Features
 
 - integration test
-- ? add "clear" button to each Quantity Selector
 - ? add ability to sort items
 
 ##### Behavior
 
 ##### Style
 
-- make shopping page show two columns on mobile instead of three
-- fill out home page
+- change header font at least for home page
+- play with body font
+- style home page better
+- decide if product cards are going to use the gradient
+- ? play with colors
 - add more shop items
 
 #### DONE
+
+_0.4.7_
+
+- fill out home page text
+- make shopping page show two columns on mobile instead of three
+- add checkout and clear cart buttons to Cart page
+- adjust font sizes on desktop vs. mobile
+- adjust Cart spacing
+- add "clear" button to each Quantity Selector
+- add option to offset Delete button in Quantity Selector for when it's centered (like on the product cards)
 
 _0.4.6_
 

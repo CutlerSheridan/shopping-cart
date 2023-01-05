@@ -6,12 +6,12 @@
 }
 .shopping-outerContainer > h1 {
   margin: 0.4rem 0 2rem 2rem;
-  font-size: 4rem;
+  font-size: 5.3rem;
 }
 @media only screen and (min-width: 600px) {
   .shopping-outerContainer > h1 {
     margin: 0 0 3rem 2rem;
-    font-size: 4.7rem;
+    font-size: 5.6rem;
   }
 }
 .shopping-content {

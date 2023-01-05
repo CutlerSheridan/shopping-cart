@@ -44,18 +44,33 @@ const Cart = () => {
           <div className="cart-total cart-total-empty">- Empty cart -</div>
         )}
         {cart.length > 0 ? (
-          <h2 className="cart-total">
-            Total:{'  '}
-            {cart
-              .reduce((prev, x) => prev + x.quantity * x.price, 0)
-              .toLocaleString(undefined, {
-                currency: 'USD',
-                style: 'currency',
-              })}
-          </h2>
+          <div className="cart-total">
+            <h2>
+              Total:{'  '}
+              {cart
+                .reduce((prev, x) => prev + x.quantity * x.price, 0)
+                .toLocaleString(undefined, {
+                  currency: 'USD',
+                  style: 'currency',
+                })}
+            </h2>
+          </div>
         ) : (
           <></>
         )}
+        <div className="cart-buttonsContainer">
+          <button className="cart-button app-button">Checkout</button>
+          <button
+            className="cart-button app-button"
+            onClick={() => {
+              dispatch({
+                type: 'cleared_cart',
+              });
+            }}
+          >
+            Clear Cart
+          </button>
+        </div>
       </div>
     </div>
   );
