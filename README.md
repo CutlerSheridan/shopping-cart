@@ -6,13 +6,14 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- add credit
+- try putting min-height on App instead of individual pages, group navbar/outlet, turn app body into a flex, and setting as 'space-between' to get footer permanently at the bottom without being too low
 
 #### TODO LATER
 
 ##### Features
 
 - integration test
+- ? add individual pages for each item beyond the simple "quick view"
 - ? add ability to sort items
 
 ##### Behavior
@@ -24,9 +25,15 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - style home page better
 - decide if product cards are going to use the gradient
 - ? play with colors
+- ? experiment changing shopping grid on mobile to grid instead of flex
 - add more shop items
 
 #### DONE
+
+_0.4.8_
+
+- replace Product Page dismiss button X with icon
+- add credit
 
 _0.4.7_
 

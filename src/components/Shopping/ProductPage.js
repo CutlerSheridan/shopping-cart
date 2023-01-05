@@ -15,11 +15,11 @@ const ProductPage = () => {
     <div className="productPage-outerContainer">
       <div className="productPage-innerContainer">
         <Link
-          className="productPage-dismiss"
+          className="productPage-dismiss material-symbols-outlined"
           to=".."
           onClick={enableBodyScroll}
         >
-          X
+          close
         </Link>
         <div className="productPage-imgContainer">
           <img src={require('../../images/' + product.imgPath)} />

@@ -21,7 +21,7 @@
 }
 .shopping-grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.3rem;
   align-content: flex-start;

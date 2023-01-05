@@ -1,7 +1,7 @@
 .productCard {
   padding: 1rem;
   padding-bottom: 1.4rem;
-  width: 16rem;
+  width: 16.5rem;
   display: flex;
   flex-direction: column;
   background: var(--clr-1);
@@ -48,5 +48,5 @@
   }
 }
 .productCard-quantitySelector {
-  align-self: center;
+  /* align-self: center; */
 }

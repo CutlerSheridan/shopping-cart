@@ -6,6 +6,7 @@
   --clr-2: rgb(15, 176, 15);
   --clr-2-dark: rgb(11, 146, 11);
   font-size: 58%;
+  background: var(--clr-1-dark);
 }
 @media only screen and (min-width: 600px) {
   :root {

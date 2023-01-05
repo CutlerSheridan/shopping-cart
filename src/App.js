@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { CartProvider } from './CartContext';
 import Navbar from './components/Navbar/Navbar';
 import { useEffect } from 'react';
+import Footer from './components/footer/footer';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Navbar />
         {/* <div>This is App</div> */}
         <Outlet />
+        <Footer />
       </div>
     </CartProvider>
   );

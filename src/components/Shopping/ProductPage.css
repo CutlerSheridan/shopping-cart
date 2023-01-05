@@ -18,8 +18,12 @@
   background: var(--clr-1);
 }
 .productPage-dismiss {
-  font-size: 2.6rem;
+  font-size: 3.5rem;
   color: var(--clr-text);
+  text-decoration: none;
+}
+.productPage-dismiss.material-symbols-outlined {
+  opacity: 1;
 }
 .productPage-imgContainer {
   margin-bottom: 1rem;
