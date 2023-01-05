@@ -32,8 +32,10 @@ body {
 }
 
 .app {
-  height: 100vh;
-  background: var(--clr-1-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .app-button {
   padding: 1rem 2rem;

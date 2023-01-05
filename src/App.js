@@ -9,9 +9,11 @@ const App = () => {
   return (
     <CartProvider>
       <div className="app">
-        <Navbar />
-        {/* <div>This is App</div> */}
-        <Outlet />
+        <div className="app-headerContentGroup">
+          <Navbar />
+          {/* <div>This is App</div> */}
+          <Outlet />
+        </div>
         <Footer />
       </div>
     </CartProvider>

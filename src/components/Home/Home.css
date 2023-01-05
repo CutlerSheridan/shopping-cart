@@ -1,5 +1,5 @@
 .home-container {
-  height: 100%;
+  padding: 0 1.6rem;
   background: var(--clr-1-dark);
 }
 .home-container > h1 {

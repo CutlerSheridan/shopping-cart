@@ -4,7 +4,7 @@
   background: var(--clr-1-dark);
 }
 .cart-innerContainer {
-  margin: 2.4rem auto;
+  margin: 0 auto;
   padding: 2.4rem 3rem;
   max-width: 75rem;
   border-radius: 0.5rem;

@@ -6,7 +6,10 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- try putting min-height on App instead of individual pages, group navbar/outlet, turn app body into a flex, and setting as 'space-between' to get footer permanently at the bottom without being too low
+- change header font at least for home page
+- play with body font
+- style home page better
+- play with colors
 
 #### TODO LATER
 
@@ -20,15 +23,18 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 ##### Style
 
-- change header font at least for home page
-- play with body font
-- style home page better
 - decide if product cards are going to use the gradient
-- ? play with colors
 - ? experiment changing shopping grid on mobile to grid instead of flex
 - add more shop items
 
 #### DONE
+
+_0.4.9_
+
+- restructure CSS on all pages so footer is always at bottom
+  - put min-height on App instead of individual pages, group navbar/outlet, turn app body into a flex, and set as 'space-between';
+  - remove heights from every individual page
+  - remove padding-top and padding-bottom from every page; instead, only put padding on navbar and footer so it applies to all pages
 
 _0.4.8_
 

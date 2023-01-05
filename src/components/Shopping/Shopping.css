@@ -1,11 +1,9 @@
 .shopping-outerContainer {
   padding: 0 1rem;
-  padding-bottom: 2rem;
-  min-height: 100%;
   background: var(--clr-1-dark);
 }
 .shopping-outerContainer > h1 {
-  margin: 0.4rem 0 2rem 2rem;
+  margin: 0 0 2rem 2rem;
   font-size: 5.3rem;
 }
 @media only screen and (min-width: 600px) {
