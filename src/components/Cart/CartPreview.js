@@ -1,7 +1,6 @@
 import './CartPreview.css';
 import { useCart, useCartDispatch } from '../../CartContext';
 import { Link } from 'react-router-dom';
-import { useDebugValue } from 'react';
 
 const CartPreview = () => {
   const cart = useCart();

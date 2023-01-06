@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { useCart } from '../../CartContext';
 
-const Navbar = (props) => {
+const Navbar = () => {
   const cart = useCart();
   const getCartText = () => {
     let result = '';

@@ -7,6 +7,8 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 #### TODO NEXT
 
 - integration test
+  - fix Shopping.test.js so it works
+- rename footer as Footer
 
 #### TODO LATER
 
@@ -24,6 +26,11 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - ? add more shop items
 
 #### DONE
+
+_0.5.0_
+
+- test Navbar
+- test RouteSwitch
 
 _0.4.10_
 

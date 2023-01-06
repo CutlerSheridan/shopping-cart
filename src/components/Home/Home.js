@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <section className="home-container">
       <h1>Apothique</h1>
-      <div className="home-textContainer">
+      <main className="home-textContainer">
         <p className="home-text">
           If you need potions, you've come to the right place.
         </p>
@@ -23,7 +23,7 @@ const Home = () => {
           So take a look at our products, and get in touch if you have any
           questions. We know you won't be disappointed.
         </p>
-      </div>
+      </main>
     </section>
   );
 };
