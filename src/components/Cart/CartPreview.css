@@ -15,7 +15,7 @@
 .cartPreview-heading {
   position: relative;
   margin: 1.6rem 0 2.8rem 0;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
 }
 .cartPreview-heading::after {
   content: '';

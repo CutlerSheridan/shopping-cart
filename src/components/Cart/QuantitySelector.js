@@ -6,7 +6,6 @@ const QuantitySelector = (props) => {
   const cart = useCart();
   const dispatch = useCartDispatch();
   const productId = +props.productId;
-  const { offsetDelete } = props;
 
   useEffect(() => {
     const icons = Array.from(
@@ -19,13 +18,6 @@ const QuantitySelector = (props) => {
 
   return (
     <div className={'quantitySelector'}>
-      {offsetDelete ? (
-        <div className="qs-deleteButtonOffset qs-stepButton qs-deleteButton app-button material-symbols-outlined">
-          close
-        </div>
-      ) : (
-        <></>
-      )}
       <button
         className="qs-stepButton app-button material-symbols-outlined"
         onClick={() => {

@@ -5,10 +5,25 @@
 .home-container > h1 {
   font-size: 6rem;
   text-align: center;
+  color: var(--clr-text-1);
+  text-decoration: underline;
+  text-decoration-color: var(--clr-2);
+}
+.home-textContainer {
+  margin: auto;
+  margin-top: 2.4rem;
+  padding: 2.4rem 2.4rem;
+  width: min(94%, 45ch);
+  background: var(--clr-1);
+  border: 2px solid var(--clr-1);
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0.3rem;
 }
 .home-text {
-  margin: 2.4rem auto;
-  padding: 0 1.6rem;
-  max-width: 45ch;
+  margin-bottom: 2.4rem;
   font-size: 2.3rem;
+}
+.home-textContainer > .home-text:last-of-type {
+  margin-bottom: 0;
 }

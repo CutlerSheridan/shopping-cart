@@ -6,16 +6,12 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- change header font at least for home page
-- play with body font
-- style home page better
-- play with colors
+- integration test
 
 #### TODO LATER
 
 ##### Features
 
-- integration test
 - ? add individual pages for each item beyond the simple "quick view"
 - ? add ability to sort items
 
@@ -25,9 +21,16 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 - decide if product cards are going to use the gradient
 - ? experiment changing shopping grid on mobile to grid instead of flex
-- add more shop items
+- ? add more shop items
 
 #### DONE
+
+_0.4.10_
+
+- make footer link to portfolio
+- change h1-6 font
+- change body font
+- style home page better
 
 _0.4.9_
 

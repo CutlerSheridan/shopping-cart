@@ -34,7 +34,7 @@ const ProductCard = (props) => {
         Quick view
       </Link>
       <div className="productCard-quantitySelector">
-        <QuantitySelector productId={productId} offsetDelete={false} />
+        <QuantitySelector productId={productId} />
       </div>
     </div>
   );

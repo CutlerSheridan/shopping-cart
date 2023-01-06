@@ -8,7 +8,7 @@ const CartPreview = () => {
   const dispatch = useCartDispatch();
   return (
     <div className="cartPreview">
-      <h2 className="cartPreview-heading">CART</h2>
+      <h2 className="cartPreview-heading">Cart</h2>
       {cart.length > 0 ? (
         cart.map((x, index) => (
           <div className="cartPreview-item" key={index}>
