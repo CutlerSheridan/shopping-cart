@@ -6,8 +6,6 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 #### TODO NEXT
 
-- rename footer as Footer
-
 #### TODO LATER
 
 ##### Features
@@ -17,6 +15,8 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 
 ##### Behavior
 
+- ? rename footer as Footer
+
 ##### Style
 
 - decide on site colors
@@ -25,6 +25,10 @@ Made to practice React, client-side routing, and TTD in React. Also experimentin
 - ? add more shop items
 
 #### DONE
+
+_1.0.0_
+
+- adjust Home header
 
 _0.5.1_
 
