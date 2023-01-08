@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.a7e7d058.css",
-    "main.js": "/shopping-cart/static/js/main.90d267d5.js",
+    "main.js": "/shopping-cart/static/js/main.2cfbe756.js",
     "static/media/mermaid-tears.png": "/shopping-cart/static/media/mermaid-tears.7a0ca46d900e07c1acd6.png",
     "static/media/druidic-balm.png": "/shopping-cart/static/media/druidic-balm.295f33c6f365357bfba5.png",
     "static/media/three-bottles.png": "/shopping-cart/static/media/three-bottles.888a8185a4be2e560cd4.png",
@@ -10,10 +10,10 @@
     "static/media/love-potion.png": "/shopping-cart/static/media/love-potion.c00104e2e0df5be4d742.png",
     "index.html": "/shopping-cart/index.html",
     "main.a7e7d058.css.map": "/shopping-cart/static/css/main.a7e7d058.css.map",
-    "main.90d267d5.js.map": "/shopping-cart/static/js/main.90d267d5.js.map"
+    "main.2cfbe756.js.map": "/shopping-cart/static/js/main.2cfbe756.js.map"
   },
   "entrypoints": [
     "static/css/main.a7e7d058.css",
-    "static/js/main.90d267d5.js"
+    "static/js/main.2cfbe756.js"
   ]
 }
